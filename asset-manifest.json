@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/new-fork-times-router-v6/static/css/main.5e86f85f.css",
-    "main.js": "/new-fork-times-router-v6/static/js/main.a7a39dea.js",
+    "main.js": "/new-fork-times-router-v6/static/js/main.a583c0eb.js",
     "static/js/787.ee2c68d8.chunk.js": "/new-fork-times-router-v6/static/js/787.ee2c68d8.chunk.js",
     "index.html": "/new-fork-times-router-v6/index.html",
     "main.5e86f85f.css.map": "/new-fork-times-router-v6/static/css/main.5e86f85f.css.map",
-    "main.a7a39dea.js.map": "/new-fork-times-router-v6/static/js/main.a7a39dea.js.map",
+    "main.a583c0eb.js.map": "/new-fork-times-router-v6/static/js/main.a583c0eb.js.map",
     "787.ee2c68d8.chunk.js.map": "/new-fork-times-router-v6/static/js/787.ee2c68d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e86f85f.css",
-    "static/js/main.a7a39dea.js"
+    "static/js/main.a583c0eb.js"
   ]
 }

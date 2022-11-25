@@ -5,7 +5,7 @@ on:
     branches: ["main"]
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     strategy:
@@ -22,7 +22,13 @@ jobs:
       - run: npm install
       - run: npm run build --if-present
 
-  cypress-run:
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          branch: development_build
+          folder: build
+
+  cypress-testing:
     runs-on: ubuntu-latest
 
     strategy:
@@ -36,18 +42,3 @@ jobs:
         with:
           build: npm run build
           start: npm start
-
-  deploy:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
-        with:
-          branch: development_build
-          folder: build

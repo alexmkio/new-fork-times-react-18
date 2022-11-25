@@ -1,4 +1,5 @@
 ![GitHub Actions Workflow](https://github.com/alexmkio/new-fork-times-router-v6/actions/workflows/testing.js.yml/badge.svg)
+![GitHub Actions Workflow](https://github.com/alexmkio/new-fork-times-router-v6/actions/workflows/deployment.js.yml/badge.svg)
 
 ## Update 11/24/2022
 

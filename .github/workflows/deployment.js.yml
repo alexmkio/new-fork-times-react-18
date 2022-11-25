@@ -7,8 +7,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    # env:
-    #   GH_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
 
     strategy:
       matrix:
@@ -25,7 +23,6 @@ jobs:
         cache: "npm"
 
     - name: Install and Build 🔧 
-      # run: git remote set-url origin https://alexmkio:$GH_ACCESS_TOKEN@github.com/alexmkio/new-fork-times-router-v6
       run: npm install && npm run build
 
     - name: Deploy 🚀

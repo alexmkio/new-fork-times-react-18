@@ -24,10 +24,33 @@ jobs:
         run: npm install
         run: npm run build
 
-      - name: Run Cypress suite
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        
+      - name: Cypress run
         uses: cypress-io/github-action@v4.2.1
         with:
+          build: npm run build
           start: npm start
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4

@@ -26,8 +26,7 @@ jobs:
 
     - name: Install and Build 🔧 
       # run: git remote set-url origin https://alexmkio:$GH_ACCESS_TOKEN@github.com/alexmkio/new-fork-times-router-v6
-      run: npm install
-      run: npm run build
+      run: npm install && npm run build
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.4.1
